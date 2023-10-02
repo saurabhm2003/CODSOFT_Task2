@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #f3f6dd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #3498db;
+    /* Pastel blue color for the header */
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #f6c1c1;
+    /* Pastel pink color for buttons */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Change the color of the "Add" button */
+#addTask {
+    background-color: #114464;
+    /* Pastel green color for the "Add" button */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    /* Pastel red color for delete button */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Style for checked tasks */
+li input[type="checkbox"]:checked+span {
+    background-color: #27ae60;
+    /* Green background for completed tasks */
+    text-decoration: line-through;
+    color: #555;
+}
+
+/* Add a background color for alternating list items */
+li:nth-child(even) {
+    background-color: #ecf0f1;
+    /* Light gray for even items */
+}
+
+/* Hover effect for list items */
+li:hover {
+    background-color: #dcdde1;
+    /* Slightly darker gray on hover */
+}
